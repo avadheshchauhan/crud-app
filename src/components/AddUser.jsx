@@ -25,12 +25,11 @@ const initialValues = {
   first_name: "",
   last_name: "",
   email: "",
-  avatar: "",
 };
 
 const AddUser = () => {
   const [user, setUser] = useState(initialValues);
-  const { first_name, last_name, email, avatar } = user;
+  const { first_name, last_name, email } = user;
   const classes = useStyle();
   const history = useHistory();
 

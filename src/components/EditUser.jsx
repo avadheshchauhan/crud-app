@@ -10,7 +10,6 @@ import {
 import React, { useEffect, useState } from "react";
 import { editUser, getUsers } from "../Service/api";
 import { useHistory, useParams } from "react-router-dom";
-import AllUsers from "./AllUsers";
 
 const useStyle = makeStyles({
   conatiner: {
@@ -31,7 +30,7 @@ const initialValues = {
 
 const EditUser = () => {
   const [user, setUser] = useState(initialValues);
-  const { first_name, last_name, email, avatar } = user;
+  const { first_name, last_name, email } = user;
   const { id } = useParams();
   const classes = useStyle();
   const history = useHistory();
